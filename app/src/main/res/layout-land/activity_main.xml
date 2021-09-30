@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--horizontal display-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp"
+    android:background="?attr/backgroundColor"
+    tools:context="com.example.final_project.MainActivity">
+
+    <!--    text for spinner-->
+    <TextView
+        android:id="@+id/textViewPackage"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="@string/pack"
+        android:textColor="?android:attr/textColor"
+        android:textSize="20sp"
+        android:fontFamily="Arial Black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <!--    spinner-->
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="370dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!--    text for user's input-->
+    <TextView
+        android:id="@+id/textViewMinutes"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/talk"
+        android:textColor="?android:attr/textColor"
+        android:textSize="20sp"
+        android:fontFamily="Arial Black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <!--    user's inout (talking minutes)-->
+    <EditText
+        android:id="@+id/userMinutes"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="?android:attr/textColor"
+        android:textColorHint="#808080"
+        android:textSize="17sp"
+        android:hint="@string/minutes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck"
+        android:autofillHints="" />
+
+    <!--    button to compute and show result-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="155dp"
+        android:backgroundTint="?attr/backgroundTint"
+        android:fadingEdge="vertical"
+        android:longClickable="true"
+        android:text="@string/compute"
+        android:textColor="#003049"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <!--    Result (sum to be paid)-->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textColor="?android:attr/textColor"
+        android:fontFamily="Arial Black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+    <!--turn on/off the dark theme-->
+    <Switch
+        android:id="@+id/mySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="Arial Black"
+        android:text="Night Mode"
+        android:textColor="?android:attr/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

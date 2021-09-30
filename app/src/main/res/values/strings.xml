@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Telephone payment</string>
+    <string name="this_is_home_screen">This is the standard package</string>
+    <string name="this_is_work_screen">This is the econom package</string>
+    <string name="minutes">minutes</string>
+    <string name="pack">Package</string>
+    <string name="talk">Talking time (minutes)</string>
+    <string name="compute">Compute</string>
+
+    <string-array name="names">
+        <item>Please, select the package</item>
+        <item>Standard</item>
+        <item>Econom</item>
+    </string-array>
+
+</resources>
